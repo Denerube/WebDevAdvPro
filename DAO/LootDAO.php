@@ -23,6 +23,16 @@ class LootDAO
         }
         return $resultatenArray;
     }
+    public static function getAllByEncounterID($ID) {
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT LOOT.ID,LOOT.Naam,LOOT.Waarde FROM LOOT INNER JOIN ENCOUNTERLOOT ON LOOT.ID=ENCOUNTERLOOT.LootID WHERE ENCOUNTERLOOT.EncounterID=?".array($ID));
+        $resultatenArray = array();
+        for ($index = 0; $index < $resultaat->num_rows; $index++) {
+            $databaseRij = $resultaat->fetch_array();
+            $nieuw = self::converteerRijNaarObject($databaseRij);
+            $resultatenArray[$index] = $nieuw;
+        }
+        return $resultatenArray;
+    }
 
     public static function getLootByID($ID){
         $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM LOOT WHERE ID=?".array($ID));
