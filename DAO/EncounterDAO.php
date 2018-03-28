@@ -2,13 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: ruben
- * Date: 24/03/2018
- * Time: 20:06
+ * Date: 28/03/2018
+ * Time: 18:44
  */
-include_once '../MODELS/Monster.php';
-include_once '../DAO/DatabaseFactory.php';
 
-class MonsterDAO
+class EncounterDAO
 {
     private static function getVerbinding() {
         return DatabaseFactory::getDatabase();
@@ -36,10 +34,10 @@ class MonsterDAO
         }
 
     }
-   /* public static function  insertNewMonster($monster){
-        return self::getVerbinding()->voerSqlQueryUit("INSERT INTO MONSTERS(ID, Naam, Type, Levenspunten, Schildwaarde) VALUES ('?','?','?','?','?')", array($monster->getID(),$monster->getNaam(),$monster->getType(),$monster->getLevenspunten(),$monster->getSchildwaarde()));
+    /* public static function  insertNewMonster($monster){
+         return self::getVerbinding()->voerSqlQueryUit("INSERT INTO MONSTERS(ID, Naam, Type, Levenspunten, Schildwaarde) VALUES ('?','?','?','?','?')", array($monster->getID(),$monster->getNaam(),$monster->getType(),$monster->getLevenspunten(),$monster->getSchildwaarde()));
 
-    }*/
+     }*/
     public static function deleteMonsterById($id) {
         return self::getVerbinding()->voerSqlQueryUit("DELETE FROM MONSTERS where ID=?", array($id));
     }
@@ -53,6 +51,4 @@ class MonsterDAO
     protected static function converteerRijNaarObject($databaseRij) {
         return new Monster($databaseRij['ID'], $databaseRij['Naam'], $databaseRij['Type'], $databaseRij['Levenspunten'], $databaseRij['Schildwaarde']);
     }
-
-
 }

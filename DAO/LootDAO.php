@@ -2,20 +2,19 @@
 /**
  * Created by PhpStorm.
  * User: ruben
- * Date: 24/03/2018
- * Time: 20:06
+ * Date: 28/03/2018
+ * Time: 18:39
  */
-include_once '../MODELS/Monster.php';
-include_once '../DAO/DatabaseFactory.php';
+include_once '../MODELS/Loot.php';
 
-class MonsterDAO
+class LootDAO
 {
     private static function getVerbinding() {
         return DatabaseFactory::getDatabase();
     }
 
     public static function getAll() {
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM MONSTERS");
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM LOOT");
         $resultatenArray = array();
         for ($index = 0; $index < $resultaat->num_rows; $index++) {
             $databaseRij = $resultaat->fetch_array();
@@ -25,8 +24,8 @@ class MonsterDAO
         return $resultatenArray;
     }
 
-    public static function getMonsterById($ID){
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM MONSTERS WHERE ID=?".array($ID));
+    public static function getLootByID($ID){
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM LOOT WHERE ID=?".array($ID));
         if ($resultaat->num_rows == 1) {
             $databaseRij = $resultaat->fetch_array();
             return self::converteerRijNaarObject($databaseRij);
@@ -36,23 +35,21 @@ class MonsterDAO
         }
 
     }
-   /* public static function  insertNewMonster($monster){
-        return self::getVerbinding()->voerSqlQueryUit("INSERT INTO MONSTERS(ID, Naam, Type, Levenspunten, Schildwaarde) VALUES ('?','?','?','?','?')", array($monster->getID(),$monster->getNaam(),$monster->getType(),$monster->getLevenspunten(),$monster->getSchildwaarde()));
+    /* public static function  insertNewMonster($loot){
+         return self::getVerbinding()->voerSqlQueryUit("INSERT INTO LOOT(ID, Naam, Waarde) VALUES ('?','?','?')", array($loot->getID(),$loot->getNaam(),$loot->getWaarde()));
 
-    }*/
+     }*/
     public static function deleteMonsterById($id) {
         return self::getVerbinding()->voerSqlQueryUit("DELETE FROM MONSTERS where ID=?", array($id));
     }
 
-    public static function deleteMonster($monster) {
-        return self::deleteMonsterById($monster->getID());
+    public static function deleteLoot($loot) {
+        return self::deleteMonsterById($loot->getID());
     }
 
 
 
     protected static function converteerRijNaarObject($databaseRij) {
-        return new Monster($databaseRij['ID'], $databaseRij['Naam'], $databaseRij['Type'], $databaseRij['Levenspunten'], $databaseRij['Schildwaarde']);
+        return new Loot($databaseRij['ID'], $databaseRij['Naam'], $databaseRij['Waarde']);
     }
-
-
 }
