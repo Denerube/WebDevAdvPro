@@ -46,6 +46,16 @@ class MonsterDAO
         }
 
     }
+    public static  function  getLatestMonsterID(){
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT MAX(ID) FROM MONSTERS ");
+        if ($resultaat->num_rows == 1) {
+            $databaseRij = $resultaat->fetch_row();
+            return $databaseRij[0];
+        } else {
+            //Er is waarschijnlijk iets mis gegaan
+            return false;
+        }
+    }
     public static function  insertNewMonster($monster)
     {
         return self::getVerbinding()->voerSqlQueryUit("INSERT INTO MONSTERS( Naam, Type, Levenspunten, Schildwaarde) VALUES ('?','?','?','?')", array( $monster->getNaam(), $monster->getType(), $monster->getLevenspunten(), $monster->getSchildwaarde()));
