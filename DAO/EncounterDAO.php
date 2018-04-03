@@ -13,7 +13,7 @@ class EncounterDAO
     }
 
     public static function getAll() {
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM MONSTERS");
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM ENCOUNTER");
         $resultatenArray = array();
         for ($index = 0; $index < $resultaat->num_rows; $index++) {
             $databaseRij = $resultaat->fetch_array();
@@ -23,8 +23,8 @@ class EncounterDAO
         return $resultatenArray;
     }
 
-    public static function getMonsterById($ID){
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM MONSTERS WHERE ID=?".array($ID));
+    public static function getEncounterByID($ID){
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM ENCOUNTER WHERE ID=?".array($ID));
         if ($resultaat->num_rows == 1) {
             $databaseRij = $resultaat->fetch_array();
             return self::converteerRijNaarObject($databaseRij);
@@ -34,21 +34,21 @@ class EncounterDAO
         }
 
     }
-    /* public static function  insertNewMonster($monster){
+    public static function  insertNewMonster($monster){
          return self::getVerbinding()->voerSqlQueryUit("INSERT INTO MONSTERS(ID, Naam, Type, Levenspunten, Schildwaarde) VALUES ('?','?','?','?','?')", array($monster->getID(),$monster->getNaam(),$monster->getType(),$monster->getLevenspunten(),$monster->getSchildwaarde()));
 
-     }*/
-    public static function deleteMonsterById($id) {
-        return self::getVerbinding()->voerSqlQueryUit("DELETE FROM MONSTERS where ID=?", array($id));
+     }
+    public static function deleteEncounterByID($id) {
+        return self::getVerbinding()->voerSqlQueryUit("DELETE FROM ENCOUNTER where ID=?", array($id));
     }
 
-    public static function deleteMonster($monster) {
-        return self::deleteMonsterById($monster->getID());
+    public static function deleteEncounter($encounter) {
+        return self::deleteMonsterById($encounter->getID());
     }
 
 
 
     protected static function converteerRijNaarObject($databaseRij) {
-        return new Monster($databaseRij['ID'], $databaseRij['Naam'], $databaseRij['Type'], $databaseRij['Levenspunten'], $databaseRij['Schildwaarde']);
+        return new Monster($databaseRij['ID'], $databaseRij['Moeilijkheidsgraad	'], $databaseRij['UserID']);
     }
 }

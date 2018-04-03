@@ -12,6 +12,7 @@ class Gebruiker
     private  $Email;
     private  $Naam;
     private  $Wachtwoord;
+    private $IsAdmin;
 
     /**
      * Gebruiker constructor.
@@ -20,12 +21,29 @@ class Gebruiker
      * @param $Naam
      * @param $Wachtwoord
      */
-    public function __construct($ID, $Email, $Naam, $Wachtwoord)
+    public function __construct($ID, $Email, $Naam, $Wachtwoord,$IsAdmin)
     {
         $this->ID = $ID;
         $this->Email = $Email;
         $this->Naam = $Naam;
         $this->Wachtwoord = $Wachtwoord;
+        $this->IsAdmin=$IsAdmin;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getisAdmin()
+    {
+        return $this->IsAdmin;
+    }
+
+    /**
+     * @param mixed $IsAdmin
+     */
+    public function setIsAdmin($IsAdmin)
+    {
+        $this->IsAdmin = $IsAdmin;
     }
 
 

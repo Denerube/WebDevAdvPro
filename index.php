@@ -1,5 +1,18 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<header>
+
+
+</header>
+<body>
+
+</body>
+</html>
 <?php
-    include 'DAO/MonsterDAO.php';
-    MonsterDAO::getALL();
+
 ?>

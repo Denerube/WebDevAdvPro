@@ -35,21 +35,31 @@ class GebruikerDAO
         }
 
     }
-    /* public static function  insertNewGebruiker($gebruiker){
-         return self::getVerbinding()->voerSqlQueryUit("INSERT INTO GEBRUIKERS (ID, Email, Naam, Passwoord) VALUES ('?','?','?','?')", array($gebruiker->getID(),$gebruiker->getEmail(),$gebruiker->getNaam(),$gebruiker->getPasswoord())));
+     public static function  insertNewGebruiker($gebruiker){
+         return self::getVerbinding()->voerSqlQueryUit("INSERT INTO GEBRUIKERS (Email, Naam, Passwoord) VALUES ('?','?','?')", array($gebruiker->getEmail(),$gebruiker->getNaam(),$gebruiker->getPasswoord()));
 
-     }*/
+     }
     public static function deleteGebruikerByID($id) {
         return self::getVerbinding()->voerSqlQueryUit("DELETE FROM GEBRUIKERS where ID=?", array($id));
     }
 
-    public static function deleteMonster($gebruiker) {
+    public static function deleteGebruiker($gebruiker) {
         return self::deleteGebruikerByID($gebruiker->getID());
     }
 
 
 
     protected static function converteerRijNaarObject($databaseRij) {
-        return new Monster($databaseRij['ID'], $databaseRij['Email'], $databaseRij['Naam'], $databaseRij['Passwoord']);
+        return new Gebruiker($databaseRij['ID'], $databaseRij['Email'], $databaseRij['Naam'], $databaseRij['Passwoord'], $databaseRij['IsAdmin']);
+    }
+    public static function  logIn ($email,$passwoord){
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM GEBRUIKERS WHERE Email=? AND Passwoord=?".array($email,$passwoord));
+        if ($resultaat->num_rows == 1) {
+            $databaseRij = $resultaat->fetch_array();
+            return self::converteerRijNaarObject($databaseRij);
+        } else {
+            //Er is waarschijnlijk iets mis gegaan
+            return false;
+        }
     }
 }

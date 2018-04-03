@@ -45,10 +45,10 @@ class LootDAO
         }
 
     }
-    /* public static function  insertNewMonster($loot){
-         return self::getVerbinding()->voerSqlQueryUit("INSERT INTO LOOT(ID, Naam, Waarde) VALUES ('?','?','?')", array($loot->getID(),$loot->getNaam(),$loot->getWaarde()));
+     public static function  insertNewLoot($loot){
+         return self::getVerbinding()->voerSqlQueryUit("INSERT INTO LOOT(Naam, Waarde) VALUES ('?','?','?')", array($loot->getID(),$loot->getNaam(),$loot->getWaarde()));
 
-     }*/
+     }
     public static function deleteMonsterById($id) {
         return self::getVerbinding()->voerSqlQueryUit("DELETE FROM MONSTERS where ID=?", array($id));
     }
