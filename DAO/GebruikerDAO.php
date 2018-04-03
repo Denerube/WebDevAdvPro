@@ -5,7 +5,7 @@
  * Date: 28/03/2018
  * Time: 18:45
  */
-include_once "../MODELS/Gebruiker.php";
+include_once "MODELS/Gebruiker.php";
 
 class GebruikerDAO
 {

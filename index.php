@@ -10,7 +10,10 @@
 
 </header>
 <body>
-
+<?php
+include "Controllers/showMonstersMainPage.php";
+?>
+test
 </body>
 </html>
 <?php

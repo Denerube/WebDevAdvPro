@@ -11,7 +11,7 @@ class DatabaseFactory {
     public static function getDatabase() {
 
         if (self::$verbinding == null) {
-            $mijnComputernaam = "localhost";
+            $mijnComputernaam = "dt5.ehb.be";
             $mijnGebruikersnaam = "18WDA056";
             $mijnWachtwoord = "71983546";
             $mijnDatabase = "18WDA056";

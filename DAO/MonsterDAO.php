@@ -5,8 +5,8 @@
  * Date: 24/03/2018
  * Time: 20:06
  */
-include_once '../MODELS/Monster.php';
-include_once '../DAO/DatabaseFactory.php';
+include_once 'MODELS/Monster.php';
+include_once 'DAO/DatabaseFactory.php';
 
 class MonsterDAO
 {
@@ -36,7 +36,7 @@ class MonsterDAO
     }
 
     public static function getMonsterById($ID){
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM MONSTERS WHERE ID=?".array($ID));
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM MONSTERS WHERE ID=?",array($ID));
         if ($resultaat->num_rows == 1) {
             $databaseRij = $resultaat->fetch_array();
             return self::converteerRijNaarObject($databaseRij);

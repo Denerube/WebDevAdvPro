@@ -5,7 +5,7 @@
  * Date: 28/03/2018
  * Time: 18:39
  */
-include_once '../MODELS/Loot.php';
+include_once 'MODELS/Loot.php';
 
 class LootDAO
 {

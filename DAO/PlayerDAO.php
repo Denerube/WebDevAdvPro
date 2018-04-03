@@ -5,7 +5,7 @@
  * Date: 2/04/2018
  * Time: 15:07
  */
-include_once "../MODELS/Player.php";
+include_once "MODELS/Player.php";
 class PlayerDAO
 {
     private static function getVerbinding() {

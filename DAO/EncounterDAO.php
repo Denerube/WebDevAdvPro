@@ -5,7 +5,7 @@
  * Date: 28/03/2018
  * Time: 18:44
  */
-
+include_once "MODELS/Encounter.php";
 class EncounterDAO
 {
     private static function getVerbinding() {
