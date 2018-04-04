@@ -5,8 +5,8 @@
  * Date: 24/03/2018
  * Time: 20:06
  */
-include_once 'MODELS/Monster.php';
-include_once 'DAO/DatabaseFactory.php';
+include_once '../MODELS/Monster.php';
+include_once '../DAO/DatabaseFactory.php';
 
 class MonsterDAO
 {

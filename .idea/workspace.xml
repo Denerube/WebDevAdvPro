@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a800e4-4ccf-4410-99d7-e0080af2bba3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Views/MonsterOverzicht.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Js/jquery-3.1.1.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Js/script.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Views/MainPage.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Controllers/showMonstersMainPage.php" afterPath="$PROJECT_DIR$/Controllers/showMonstersMainPage.php" />
       <change beforePath="$PROJECT_DIR$/DAO/MonsterDAO.php" afterPath="$PROJECT_DIR$/DAO/MonsterDAO.php" />
+      <change beforePath="$PROJECT_DIR$/Views/MonsterOverzicht.php" afterPath="$PROJECT_DIR$/Views/MonsterOverzicht.php" />
       <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,52 +20,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MonsterDAO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAO/MonsterDAO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-              <folding>
-                <marker date="1522764003443" expanded="true" signature="382:404" ph="SELECT * FRO... MONSTERS" />
-                <marker date="1522764003443" expanded="true" signature="843:1057" ph="SELECT MONST... MONSTERS" />
-                <marker date="1522764003443" expanded="true" signature="1502:1534" ph="SELECT * FRO... MONSTERS" />
-                <marker date="1522764003443" expanded="true" signature="1502:1535" ph="SELECT * FRO... MONSTERS" />
-                <marker date="1522764003443" expanded="true" signature="1502:1536" ph="SELECT * FRO... MONSTERS" />
-                <marker date="1522764003443" expanded="true" signature="1502:1548" ph="SELECT * FRO... MONSTERS" />
-                <marker date="1522764003443" expanded="true" signature="1932:1960" ph="SELECT MAX(I... MONSTERS" />
-                <marker date="1522764003443" expanded="true" signature="2320:2394" ph="INSERT INTO MONSTERS... " />
-                <marker date="1522764003443" expanded="true" signature="2320:2406" ph="INSERT INTO MONSTERS... " />
-                <marker date="1522764003443" expanded="true" signature="2631:2662" ph="DELETE FROM MONSTERS... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showMonstersMainPage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/showMonstersMainPage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MonsterOverzicht.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/MonsterOverzicht.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MonsterOverzicht.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Views/MonsterOverzicht.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,6 +56,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -101,9 +84,13 @@
         <option value="$PROJECT_DIR$/DAO/PlayerDAO.php" />
         <option value="$PROJECT_DIR$/DAO/DatabaseFactory.php" />
         <option value="$PROJECT_DIR$/DAO/MonsterDAO.php" />
+        <option value="$PROJECT_DIR$/Views/index.php" />
         <option value="$PROJECT_DIR$/Controllers/showMonstersMainPage.php" />
-        <option value="$PROJECT_DIR$/Views/MonsterOverzicht.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Views/MainPage.php" />
+        <option value="$PROJECT_DIR$/Controllers/ShowmonstersMonsterOverzicht.php" />
+        <option value="$PROJECT_DIR$/JS/script.js" />
+        <option value="$PROJECT_DIR$/Views/MonsterOverzicht.php" />
       </list>
     </option>
   </component>
@@ -135,7 +122,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,13 +143,18 @@
             <path>
               <item name="Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MODELS" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,7 +163,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Project\JS" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Project" />
+      <recent name="C:\xampp\htdocs\Project\Views" />
       <recent name="C:\xampp\htdocs\Project\DAO" />
     </key>
   </component>
@@ -211,16 +208,17 @@
       <workItem from="1522674077012" duration="2663000" />
       <workItem from="1522676780156" duration="1401000" />
       <workItem from="1522757282230" duration="8465000" />
+      <workItem from="1522839228830" duration="3443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22955000" />
+    <option name="totallyTimeSpent" value="26398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -251,45 +249,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DAO/GebruikerDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-          <folding>
-            <marker date="1522759542341" expanded="true" signature="346:370" ph="SELECT * FRO... GEBRUIKERS" />
-            <marker date="1522759542341" expanded="true" signature="806:841" ph="SELECT * FRO... GEBRUIKERS" />
-            <marker date="1522759542341" expanded="true" signature="1243:1311" ph="INSERT INTO GEBRUIKERS... " />
-            <marker date="1522759542341" expanded="true" signature="1512:1545" ph="DELETE FROM MONSTERS... " />
-            <marker date="1522759542341" expanded="true" signature="2036:2074" ph="SELECT * FRO... GEBRUIKERS" />
-            <marker date="1522759542341" expanded="true" signature="2036:2090" ph="SELECT * FRO... GEBRUIKERS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MODELS/Encounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MODELS/Gebruiker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MODELS/Loot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/LoginController.php" />
     <entry file="file://$PROJECT_DIR$/DAO/EncounterDAO.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -325,16 +284,16 @@
         <state relative-caret-position="527">
           <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding>
-            <marker date="1522764003443" expanded="true" signature="382:404" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="843:1057" ph="SELECT MONST... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1534" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1535" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1536" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1548" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1932:1960" ph="SELECT MAX(I... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="2320:2394" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2320:2406" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2631:2662" ph="DELETE FROM MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="388:410" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="849:1063" ph="SELECT MONST... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1540" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1541" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1542" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1554" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1938:1966" ph="SELECT MAX(I... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="2326:2400" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2326:2412" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2637:2668" ph="DELETE FROM MONSTERS... " />
           </folding>
         </state>
       </provider>
@@ -343,7 +302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -359,7 +317,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -368,16 +325,16 @@
         <state relative-caret-position="527">
           <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding>
-            <marker date="1522764003443" expanded="true" signature="382:404" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="843:1057" ph="SELECT MONST... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1534" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1535" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1536" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1548" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1932:1960" ph="SELECT MAX(I... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="2320:2394" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2320:2406" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2631:2662" ph="DELETE FROM MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="388:410" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="849:1063" ph="SELECT MONST... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1540" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1541" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1542" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1554" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1938:1966" ph="SELECT MAX(I... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="2326:2400" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2326:2412" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2637:2668" ph="DELETE FROM MONSTERS... " />
           </folding>
         </state>
       </provider>
@@ -386,7 +343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -402,7 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -411,16 +366,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522764003443" expanded="true" signature="382:404" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="843:1057" ph="SELECT MONST... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1534" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1535" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1536" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1548" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1932:1960" ph="SELECT MAX(I... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="2320:2394" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2320:2406" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2631:2662" ph="DELETE FROM MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="388:410" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="849:1063" ph="SELECT MONST... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1540" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1541" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1542" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1554" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1938:1966" ph="SELECT MAX(I... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="2326:2400" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2326:2412" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2637:2668" ph="DELETE FROM MONSTERS... " />
           </folding>
         </state>
       </provider>
@@ -439,16 +394,16 @@
         <state relative-caret-position="153">
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding>
-            <marker date="1522764003443" expanded="true" signature="382:404" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="843:1057" ph="SELECT MONST... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1534" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1535" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1536" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1548" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1932:1960" ph="SELECT MAX(I... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="2320:2394" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2320:2406" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2631:2662" ph="DELETE FROM MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="388:410" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="849:1063" ph="SELECT MONST... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1540" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1541" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1542" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1554" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1938:1966" ph="SELECT MAX(I... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="2326:2400" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2326:2412" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2637:2668" ph="DELETE FROM MONSTERS... " />
           </folding>
         </state>
       </provider>
@@ -475,16 +430,16 @@
         <state relative-caret-position="136">
           <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
-            <marker date="1522764003443" expanded="true" signature="382:404" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="843:1057" ph="SELECT MONST... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1534" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1535" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1536" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1548" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1932:1960" ph="SELECT MAX(I... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="2320:2394" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2320:2406" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2631:2662" ph="DELETE FROM MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="388:410" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="849:1063" ph="SELECT MONST... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1540" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1541" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1542" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1554" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1938:1966" ph="SELECT MAX(I... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="2326:2400" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2326:2412" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2637:2668" ph="DELETE FROM MONSTERS... " />
           </folding>
         </state>
       </provider>
@@ -514,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -524,7 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -532,15 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MODELS/Monster.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -561,7 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2006">
           <caret line="118" column="5" lean-forward="false" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -609,14 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAO/DatabaseFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DAO/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -625,45 +560,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/DatabaseFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DAO/MonsterDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        <state relative-caret-position="116">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
-            <marker date="1522764003443" expanded="true" signature="382:404" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="843:1057" ph="SELECT MONST... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1534" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1535" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1536" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1502:1548" ph="SELECT * FRO... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="1932:1960" ph="SELECT MAX(I... MONSTERS" />
-            <marker date="1522764003443" expanded="true" signature="2320:2394" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2320:2406" ph="INSERT INTO MONSTERS... " />
-            <marker date="1522764003443" expanded="true" signature="2631:2662" ph="DELETE FROM MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="388:410" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="849:1063" ph="SELECT MONST... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1540" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1541" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1542" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1508:1554" ph="SELECT * FRO... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="1938:1966" ph="SELECT MAX(I... MONSTERS" />
+            <marker date="1522840014923" expanded="true" signature="2326:2400" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2326:2412" ph="INSERT INTO MONSTERS... " />
+            <marker date="1522840014923" expanded="true" signature="2637:2668" ph="DELETE FROM MONSTERS... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MODELS/Monster.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-907">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/showMonstersMainPage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/MonsterOverzicht.php">
+    <entry file="file://$PROJECT_DIR$/Views/MainPage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/ShowmonstersMonsterOverzicht.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Js/jquery-3.1.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/MonsterOverzicht.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>

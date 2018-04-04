@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +6,15 @@
 </head>
 <header>
 
-
 </header>
 <body>
 <?php
-    header("Location:Views/Mainpage.php");
+include "../Controllers/showMonstersMainPage.php";
 ?>
-
+test
+<a href="MonsterOverzicht.php"> Overzicht monsters</a>
 </body>
 </html>
+<?php
+
+?>

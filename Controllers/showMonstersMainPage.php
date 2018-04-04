@@ -1,5 +1,5 @@
 <?php
-include_once "DAO/MonsterDAO.php";
+include_once "../DAO/MonsterDAO.php";
 ?>
 
 <?php
@@ -21,7 +21,6 @@ echo "de 5 laatste Monsters";
 ?>
 </p>
 <?php
-echo MonsterDAO::getLatestMonsterID();
     for ($y=MonsterDAO::getLatestMonsterID();$y>=MonsterDAO::getLatestMonsterID()-3;$y--) {
 
     ?>
