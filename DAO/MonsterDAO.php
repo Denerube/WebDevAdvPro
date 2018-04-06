@@ -67,11 +67,19 @@ class MonsterDAO
     public static function deleteMonster($monster) {
         return self::deleteMonsterById($monster->getID());
     }
-
-
+    public static function getBlob($ID){
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT Foto FROM MONSTERS WHERE ID=?",array($ID));
+        if ($resultaat->num_rows == 1) {
+            $databaseRij = $resultaat->fetch_array();
+            return self::converteerRijNaarObject($databaseRij);
+        } else {
+            //Er is waarschijnlijk iets mis gegaan
+            return false;
+        }
+    }
 
     protected static function converteerRijNaarObject($databaseRij) {
-        return new Monster($databaseRij['ID'], $databaseRij['Naam'], $databaseRij['Type'], $databaseRij['Levenspunten'], $databaseRij['Schildwaarde']);
+        return new Monster($databaseRij['ID'], $databaseRij['Naam'], $databaseRij['Type'], $databaseRij['Levenspunten'], $databaseRij['Schildwaarde'],$databaseRij["Foto"]);
     }
 
 

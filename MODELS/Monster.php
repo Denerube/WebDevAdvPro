@@ -13,6 +13,7 @@ class Monster
     private $Type;
     private $Levenspunten;
     private $schildwaarde;
+    private $Foto;
 
     /**
      * Monster constructor.
@@ -21,14 +22,38 @@ class Monster
      * @param $Type
      * @param $Levenspunten
      * @param $schildwaarde
+     * @param $Foto
      */
-    public function __construct($ID, $Naam, $Type, $Levenspunten, $schildwaarde)
+    public function __construct($ID, $Naam, $Type, $Levenspunten, $schildwaarde, $Foto)
     {
         $this->ID = $ID;
         $this->Naam = $Naam;
         $this->Type = $Type;
         $this->Levenspunten = $Levenspunten;
         $this->schildwaarde = $schildwaarde;
+        if ($Foto==null){
+            $foto="hier moet een foto komen";
+        }
+        else {
+            $this->Foto = $Foto;
+        }
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function getFoto()
+    {
+        return $this->Foto;
+    }
+
+    /**
+     * @param mixed $Foto
+     */
+    public function setFoto($Foto)
+    {
+        $this->Foto = $Foto;
     }
 
 

@@ -11,9 +11,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+        <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
     </head>
     <header>
-
 
     </header>
     <body>
