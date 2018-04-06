@@ -4,38 +4,40 @@
 <?php
     $lijstMonsters = MonsterDAO::getAll();
     ?>
+<ul id="MonsterLijstOverzicht" >
     <?php
      for ($i=0;$i<count($lijstMonsters);$i++){
          ?>
-<ul id="MonsterLijstOverzicht">
+            <br>
         <li id="MonsterNaam">
+            <a href="#" style="text-decoration: none;color: black">
                 <?php
                 echo $lijstMonsters[$i]->getNaam();
                 ?>
+                <br>
+                <?php
+                echo $lijstMonsters[$i]->getType();
+                ?>
+                <br>
+                <?php
+                echo $lijstMonsters[$i]->GetLevenspunten();
+                ?>
+                <br>
+                <?php
+                echo $lijstMonsters[$i]->getSchildwaarde();
+                ?>
+                <br>
+                <?php
+                echo "hier moet foto";
+                ?>
+                <br>
+                </a>
             </li>
-             <li id="MonsterType">
-             <?php
-             echo $lijstMonsters[$i]->getType();
-             ?>
-             </li>
-             <li id="MonsterLevenspunten">
-             <?php
-             echo $lijstMonsters[$i]->GetLevenspunten();
-             ?>
-         </li>
-         <li id="MonsterSchildwaarde">
-             <?php
-             echo $lijstMonsters[$i]->getSchildwaarde();
-             ?>
-         </li>
-         <li id="MonsterFoto">
-             <?php
-             echo "hier moet foto";
-             ?>
-         </li>
-</ul>
+
 
          <?php
      }
      ?>
+</ul>
+
 
