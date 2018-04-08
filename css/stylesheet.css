@@ -26,4 +26,8 @@ a{
     margin: 4px 2px;
     margin-top: 5px;
 }
+.listSelectetMonsters{
+    float: right;
+    display: inline;
+}
 

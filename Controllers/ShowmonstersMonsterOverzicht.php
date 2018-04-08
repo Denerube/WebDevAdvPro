@@ -11,11 +11,9 @@ $lijstMonsters = MonsterDAO::getAll();
         <br>
         <li style="list-style: none">
             <div id="MonsterID" style="visibility:hidden " >
-
                 <?php
                 echo $lijstMonsters[$i]->getID();
                 ?>
-
             </div>
                 <div id="MonsterNaam" >
                 <?php
@@ -45,9 +43,15 @@ $lijstMonsters = MonsterDAO::getAll();
                 ?>
             </div>
             <button id="EncounterMonsterToevoegen" class="EncounterMonsterToevoegen"> toevoegen</button>
+            <form action="">
+                <input type="submit" value="
+                <?php
+                echo $lijstMonsters[$i]->getID();
+                ?>"
+
+                >
+            </form>
         </li>
-
-
 
         <?php
     }

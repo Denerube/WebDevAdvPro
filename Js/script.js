@@ -27,9 +27,10 @@ $(document).ready(function() {
     $('button.EncounterMonsterToevoegen').on("click",function () {
         encounterMonsterIDList[tellerencounterMonsterIDList]=($(this).siblings('#MonsterID').text()
         );
-        //console.log(encounterMonsterIDList[tellerencounterMonsterIDList]);
         tellerencounterMonsterIDList++;
-        //console.log(encounterMonsterIDList);
+        copy = $(this).siblings('#MonsterNaam').text();
+        $('#listSelectetMonsters').append("<p>Naam: " + copy + "</p>");
+
 
    })
 });

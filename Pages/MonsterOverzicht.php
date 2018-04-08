@@ -21,7 +21,8 @@
     <?php
     include  "../Controllers/ShowmonstersMonsterOverzicht.php"
     ?>
-    test
+    <div id="listSelectetMonsters" class="listSelectetMonsters">
+    </div>
     </body>
     <footer>
         <script src="../Js/jquery-3.1.1.min.js"></script>
