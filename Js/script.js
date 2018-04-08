@@ -1,3 +1,4 @@
+var EncounterMonsterIDList= new array();
 
 function filterOpMonsterType() {
     //https://www.w3schools.com/howto/howto_js_filter_lists.asp
@@ -19,3 +20,14 @@ function filterOpMonsterType() {
             }
         }
 }
+function addEncounterMonster(){
+$('button.EncounterMonsterToevoegen').on("click",function () {
+    EncounterMonsterIDList.add()
+})
+};
+
+$(document).ready(function() {
+   $('li.MonsterNaam').on("mouseover",function (e) {
+
+   })
+});
