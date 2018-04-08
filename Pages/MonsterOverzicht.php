@@ -17,7 +17,7 @@
 
     </header>
     <body>
-    Filter op monster type <input name="filterMonsterType" type="text" id="filterOpMonsterType" placeholder="Filter op monster TYPE" onkeyup="filterOpMonsterType()">
+    Filter op monster type <input name="filterMonsterType" type="text" id="filterOpMonsterType" placeholder="Filter op monster TYPE" onkeyup="filterOpMonsterType()"/>
     <?php
     include  "../Controllers/ShowmonstersMonsterOverzicht.php"
     ?>
