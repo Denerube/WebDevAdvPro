@@ -1,7 +1,13 @@
 
 var encounterMonsterIDList=[];
 var encounterMonsterNaamList=[];
-var tellerencounterMonsterList=0;
+if (0 != sessionStorage.getItem("tellerencounterMonsterList")) {
+    var tellerencounterMonsterList=sessionStorage.getItem("tellerencounterMonsterList");
+}else{
+    sessionStorage.setItem("tellerencounterMonsterList",0)
+}
+
+
 var detailID=0;
 
 function filterOpMonsterType() {
@@ -26,10 +32,12 @@ function filterOpMonsterType() {
 }
 function printList(){
     console.log("doe iets");
-   /* for (var i=0;i<tellerencounterMonsterList;i++){
-        $('#encounterAfdruk').append("<p>"+ encounterMonsterNaamList[i]+"</p>");
+    var afdruk = JSON.parse(sessionStorage.getItem("encounterMonsterNaamList"));
+    var tellerencounterMonsterList = sessionStorage.getItem("tellerencounterMonsterList");
+    for (var i=0;i<tellerencounterMonsterList;i++){
+        $('#encounterAfdruk').append("<p>"+ afdruk[i]+"</p>");
 
-    }*/
+    }
 }
 
 
@@ -37,10 +45,18 @@ function printList(){
 $(document).ready(function() {
 
     $('button.EncounterMonsterToevoegen').on("click",function () {
+        if ( 0 != sessionStorage.getItem("tellerencounterMonsterList" ) ) {
+            encounterMonsterIDList=JSON.parse(sessionStorage.getItem("encounterMonsterIDList"));
+            encounterMonsterNaamList=JSON.parse(sessionStorage.getItem("encounterMonsterNaamList"));
+        }
 
         encounterMonsterIDList[tellerencounterMonsterList]=($(this).siblings('#MonsterID').text());
         encounterMonsterNaamList[tellerencounterMonsterList]=($(this).siblings('#MonsterNaam').text());
         tellerencounterMonsterList++;
+
+        sessionStorage.setItem("tellerencounterMonsterList",tellerencounterMonsterList);
+        sessionStorage.setItem("encounterMonsterIDList",JSON.stringify(encounterMonsterIDList));
+        sessionStorage.setItem("encounterMonsterNaamList",JSON.stringify(encounterMonsterNaamList));
         console.log(encounterMonsterIDList);
         copy = $(this).siblings('#MonsterNaam').text();
         $('#listSelectetMonsters').append("<p>" +copy +"</p>");

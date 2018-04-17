@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a800e4-4ccf-4410-99d7-e0080af2bba3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Controllers/Validatie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/newUserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/showMonsterDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/ShowmonstersMonsterOverzicht.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ShowmonstersMonsterOverzicht.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/loginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/loginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/newUserController.php5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/EncounterDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/EncounterDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/GebruikerDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/GebruikerDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/LoginDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/LoginDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/LootDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/LootDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/MonsterDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/MonsterDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/PlayerDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/PlayerDAO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODELS/Gebruiker.php" beforeDir="false" afterPath="$PROJECT_DIR$/MODELS/Gebruiker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/MainPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/MainPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/MakeNewUserPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/MakeNewUserPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/MonsterOverzicht.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/MonsterOverzicht.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Monsterdetailpagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Monsterdetailpagina.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/EncounterPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/EncounterPage.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,38 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EncounterPage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EncounterPage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pages/EncounterPage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+            <state relative-caret-position="672">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EncounterController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/EncounterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainPage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pages/MainPage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="884">
+              <caret line="52" column="30" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -135,9 +99,9 @@
         <option value="$PROJECT_DIR$/Pages/Monsterdetailpagina.php" />
         <option value="$PROJECT_DIR$/Pages/MonsterOverzicht.php" />
         <option value="$PROJECT_DIR$/Controllers/loginController.php" />
-        <option value="$PROJECT_DIR$/Js/script.js" />
         <option value="$PROJECT_DIR$/Controllers/EncounterController.php" />
         <option value="$PROJECT_DIR$/Pages/EncounterPage.php" />
+        <option value="$PROJECT_DIR$/Js/script.js" />
       </list>
     </option>
   </component>
@@ -266,16 +230,15 @@
       <workItem from="1523887263725" duration="10523000" />
       <workItem from="1523968105676" duration="10557000" />
       <workItem from="1523983723438" duration="1149000" />
-      <workItem from="1523984926145" duration="17532000" />
+      <workItem from="1523984926145" duration="19207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92775000" />
+    <option name="totallyTimeSpent" value="94450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17916666" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -547,13 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/MainPage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -570,8 +526,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pages/EncounterPage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+        <state relative-caret-position="672">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="30" />
         </state>
       </provider>
     </entry>

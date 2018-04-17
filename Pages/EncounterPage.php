@@ -45,11 +45,11 @@
 <?php include_once "../Controllers/loginController.php"?>
 <h1>Maak een nieuwe encounter</h1>
 <h2>Deze monsters zitte er al in jouw encounter</h2>
-
+<button onclick="printList()">TEST</button>
 <div id="encounterAfdruk" class="encounterAfdruk" onload="printList()" >
 </div>
 
-<button onclick="printList()"></button>
+
 </body>
 <footer>
     <script src="../Js/jquery-3.1.1.min.js"></script>
