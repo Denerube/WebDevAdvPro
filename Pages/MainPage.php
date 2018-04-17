@@ -6,6 +6,17 @@
 </head>
 <header>
 
+<div id="login">
+    <h6>Login</h6>
+    <form name="login" action="../Controllers/loginController.php" method="POST">
+        Email: <input name="loginName" required>
+        Password: <input name="loginPass" required>
+        <input type="submit">
+    </form>
+    <h6>Maak account aan</h6>
+    <a href="MakeNewUserPage.php"
+</div>
+
 </header>
 <body>
 <?php
