@@ -6,6 +6,8 @@
  * Time: 18:44
  */
 include_once "MODELS/Encounter.php";
+include_once '../DAO/DatabaseFactory.php';
+
 class EncounterDAO
 {
     private static function getVerbinding() {
@@ -24,7 +26,7 @@ class EncounterDAO
     }
 
     public static function getEncounterByID($ID){
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM ENCOUNTER WHERE ID=?".array($ID));
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM ENCOUNTER WHERE ID=?",array($ID));
         if ($resultaat->num_rows == 1) {
             $databaseRij = $resultaat->fetch_array();
             return self::converteerRijNaarObject($databaseRij);
@@ -49,6 +51,6 @@ class EncounterDAO
 
 
     protected static function converteerRijNaarObject($databaseRij) {
-        return new Monster($databaseRij['ID'], $databaseRij['Moeilijkheidsgraad	'], $databaseRij['UserID']);
+        return new Encounter($databaseRij['ID'], $databaseRij['Moeilijkheidsgraad	'], $databaseRij['UserID']);
     }
 }

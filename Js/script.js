@@ -1,5 +1,8 @@
+
 var encounterMonsterIDList=[];
-var tellerencounterMonsterIDList=0;
+var encounterMonsterNaamList=[];
+var tellerencounterMonsterList=0;
+var detailID=0;
 
 function filterOpMonsterType() {
     //https://www.w3schools.com/howto/howto_js_filter_lists.asp
@@ -21,16 +24,36 @@ function filterOpMonsterType() {
             }
         }
 }
+function printList(){
+    console.log("doe iets");
+   /* for (var i=0;i<tellerencounterMonsterList;i++){
+        $('#encounterAfdruk').append("<p>"+ encounterMonsterNaamList[i]+"</p>");
+
+    }*/
+}
+
 
 
 $(document).ready(function() {
+
     $('button.EncounterMonsterToevoegen').on("click",function () {
-        encounterMonsterIDList[tellerencounterMonsterIDList]=($(this).siblings('#MonsterID').text()
-        );
-        tellerencounterMonsterIDList++;
+
+        encounterMonsterIDList[tellerencounterMonsterList]=($(this).siblings('#MonsterID').text());
+        encounterMonsterNaamList[tellerencounterMonsterList]=($(this).siblings('#MonsterNaam').text());
+        tellerencounterMonsterList++;
+        console.log(encounterMonsterIDList);
         copy = $(this).siblings('#MonsterNaam').text();
-        $('#listSelectetMonsters').append("<p>Naam: " + copy + "</p>");
+        $('#listSelectetMonsters').append("<p>" +copy +"</p>");
 
 
-   })
+   });
+
+    $('button.gaNaarDetails').on("click",function () {
+
+        detailID=($(this).siblings('#MonsterID').text());
+        $.post('../Controllers/showMonsterDetail.php',{id:detailID});
+        location.href="../Pages/Monsterdetailpagina.php?id="+detailID;
+    });
+
+
 });

@@ -26,6 +26,20 @@ a{
     margin: 4px 2px;
     margin-top: 5px;
 }
+#gaNaarDetails{
+     background-color: #4CAF50;
+     border: 2px solid black;
+     color: white;
+     padding: 15px 5px;
+     text-align: center;
+     text-decoration: none;
+     margin-bottom: 20px;
+     cursor: pointer;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     margin-top: 5px;
+ }
 .listSelectetMonsters{
     float: right;
     display: inline;

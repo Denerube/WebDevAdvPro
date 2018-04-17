@@ -6,6 +6,8 @@
  * Time: 18:45
  */
 include_once "MODELS/Gebruiker.php";
+include_once '../DAO/DatabaseFactory.php';
+
 
 class GebruikerDAO
 {
@@ -25,7 +27,7 @@ class GebruikerDAO
     }
 
     public static function getGebruikerByID($ID){
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM GEBRUIKERS WHERE ID=?".array($ID));
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM GEBRUIKERS WHERE ID=?",array($ID));
         if ($resultaat->num_rows == 1) {
             $databaseRij = $resultaat->fetch_array();
             return self::converteerRijNaarObject($databaseRij);
@@ -36,7 +38,7 @@ class GebruikerDAO
 
     }
      public static function  insertNewGebruiker($gebruiker){
-         return self::getVerbinding()->voerSqlQueryUit("INSERT INTO GEBRUIKERS (Email, Naam, Passwoord) VALUES ('?','?','?')", array($gebruiker->getEmail(),$gebruiker->getNaam(),$gebruiker->getPasswoord()));
+         return self::getVerbinding()->voerSqlQueryUit("INSERT INTO GEBRUIKERS (Email, Naam, Passwoord,IsAdmin) VALUES ('?','?','?','?')", array($gebruiker->getEmail(),$gebruiker->getNaam(),$gebruiker->getPasswoord(),$gebruiker->getIsAdmin()));
 
      }
     public static function deleteGebruikerByID($id) {
@@ -52,14 +54,5 @@ class GebruikerDAO
     protected static function converteerRijNaarObject($databaseRij) {
         return new Gebruiker($databaseRij['ID'], $databaseRij['Email'], $databaseRij['Naam'], $databaseRij['Passwoord'], $databaseRij['IsAdmin']);
     }
-    public static function  logIn ($email,$passwoord){
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM GEBRUIKERS WHERE Email=? AND Passwoord=?".array($email,$passwoord));
-        if ($resultaat->num_rows == 1) {
-            $databaseRij = $resultaat->fetch_array();
-            return self::converteerRijNaarObject($databaseRij);
-        } else {
-            //Er is waarschijnlijk iets mis gegaan
-            return false;
-        }
-    }
+
 }

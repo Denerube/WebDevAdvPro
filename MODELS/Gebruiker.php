@@ -33,7 +33,7 @@ class Gebruiker
     /**
      * @return mixed
      */
-    public function getisAdmin()
+    public function getIsAdmin()
     {
         return $this->IsAdmin;
     }

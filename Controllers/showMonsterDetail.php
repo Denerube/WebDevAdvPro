@@ -2,11 +2,12 @@
 include_once "../DAO/MonsterDAO.php";
 ?>
 <?php
-$lijstMonsters = MonsterDAO::getAll();
+$id=$_GET['id'];
+$lijstMonsters[0] = MonsterDAO::getMonsterById($id);
 ?>
 <ul id="MonsterLijstOverzicht" >
     <?php
-    for ($i=0;$i<count($lijstMonsters);$i++){
+   for ($i=0;$i<count($lijstMonsters);$i++){
         ?>
         <br>
         <li style="list-style: none">
@@ -15,18 +16,18 @@ $lijstMonsters = MonsterDAO::getAll();
                 echo $lijstMonsters[$i]->getID();
                 ?>
             </div>
-                <div id="MonsterNaam" > Naam:
+            <div id="MonsterNaam" > Naam:
                 <?php
                 echo $lijstMonsters[$i]->getNaam();
                 ?>
-                </div>
-                 <div id="MonsterType"> Type:
-                 <a href="#" style="text-decoration: none;color: black">
-                <?php
-                echo $lijstMonsters[$i]->getType();
-                ?>
+            </div>
+            <div id="MonsterType"> Type:
+                <a href="#" style="text-decoration: none;color: black">
+                    <?php
+                    echo $lijstMonsters[$i]->getType();
+                    ?>
                 </a>
-                 </div>
+            </div>
             <div id="MonsterLevenspunten">HP:
                 <?php
                 echo $lijstMonsters[$i]->GetLevenspunten();
@@ -42,8 +43,8 @@ $lijstMonsters = MonsterDAO::getAll();
                 echo '<img src="data:image/jpeg;base64,'.base64_encode( $lijstMonsters[$i]->getFoto() ).'"/>';
                 ?>
             </div>
-            <button id="EncounterMonsterToevoegen" class="EncounterMonsterToevoegen">Monster toevoegen</button>
-            <button id="gaNaarDetails" class="gaNaarDetails">Details monster</button>
+
+
         </li>
 
         <?php

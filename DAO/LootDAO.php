@@ -6,6 +6,8 @@
  * Time: 18:39
  */
 include_once 'MODELS/Loot.php';
+include_once '../DAO/DatabaseFactory.php';
+
 
 class LootDAO
 {
@@ -24,7 +26,7 @@ class LootDAO
         return $resultatenArray;
     }
     public static function getAllByEncounterID($ID) {
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT LOOT.ID,LOOT.Naam,LOOT.Waarde FROM LOOT INNER JOIN ENCOUNTERLOOT ON LOOT.ID=ENCOUNTERLOOT.LootID WHERE ENCOUNTERLOOT.EncounterID=?".array($ID));
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT LOOT.ID,LOOT.Naam,LOOT.Waarde FROM LOOT INNER JOIN ENCOUNTERLOOT ON LOOT.ID=ENCOUNTERLOOT.LootID WHERE ENCOUNTERLOOT.EncounterID=?",array($ID));
         $resultatenArray = array();
         for ($index = 0; $index < $resultaat->num_rows; $index++) {
             $databaseRij = $resultaat->fetch_array();

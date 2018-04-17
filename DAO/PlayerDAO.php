@@ -6,6 +6,8 @@
  * Time: 15:07
  */
 include_once "MODELS/Player.php";
+include_once '../DAO/DatabaseFactory.php';
+
 class PlayerDAO
 {
     private static function getVerbinding() {
@@ -24,7 +26,7 @@ class PlayerDAO
     }
 
     public static function getPlayerByID($ID){
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM PLAYERS WHERE ID=?".array($ID));
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM PLAYERS WHERE ID=?",array($ID));
         if ($resultaat->num_rows == 1) {
             $databaseRij = $resultaat->fetch_array();
             return self::converteerRijNaarObject($databaseRij);

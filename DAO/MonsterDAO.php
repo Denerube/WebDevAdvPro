@@ -25,7 +25,7 @@ class MonsterDAO
         return $resultatenArray;
     }
     public static function getAllByEncounterID($ID) {
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT MONSTERS.ID,MONSTERS.Naam,MONSTERS.Type,MONSTERS.Levenspunten,MONSTERS.Schildwaarde FROM MONSTERS INNER JOIN ENCOUNTERMONSTERS ON MONSTERS.ID=ENCOUNTERMONSTERS.MonsterID WHERE ENCOUNTERMONSTERS.EncounterID=?".array($ID));
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT MONSTERS.ID,MONSTERS.Naam,MONSTERS.Type,MONSTERS.Levenspunten,MONSTERS.Schildwaarde FROM MONSTERS INNER JOIN ENCOUNTERMONSTERS ON MONSTERS.ID=ENCOUNTERMONSTERS.MonsterID WHERE ENCOUNTERMONSTERS.EncounterID=?",array($ID));
         $resultatenArray = array();
         for ($index = 0; $index < $resultaat->num_rows; $index++) {
             $databaseRij = $resultaat->fetch_array();
