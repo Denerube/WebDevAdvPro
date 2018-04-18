@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="16a800e4-4ccf-4410-99d7-e0080af2bba3" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Js/script.js" afterDir="false" />
 =======
+=======
+>>>>>>> fb3f9a001d834d22656f8c8ee3314db5fb79a006
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Controllers/loginController.php" afterPath="$PROJECT_DIR$/Controllers/loginController.php" />
       <change beforePath="$PROJECT_DIR$/DAO/LoginDAO.php" afterPath="$PROJECT_DIR$/DAO/LoginDAO.php" />
@@ -13,6 +16,9 @@
       <change beforePath="$PROJECT_DIR$/Pages/MakeNewUserPage.php" afterPath="$PROJECT_DIR$/Pages/MakeNewUserPage.php" />
       <change beforePath="$PROJECT_DIR$/Pages/MonsterOverzicht.php" afterPath="$PROJECT_DIR$/Pages/MonsterOverzicht.php" />
       <change beforePath="$PROJECT_DIR$/Pages/Monsterdetailpagina.php" afterPath="$PROJECT_DIR$/Pages/Monsterdetailpagina.php" />
+<<<<<<< HEAD
+>>>>>>> fb3f9a001d834d22656f8c8ee3314db5fb79a006
+=======
 >>>>>>> fb3f9a001d834d22656f8c8ee3314db5fb79a006
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +44,14 @@
         <entry file="file://$PROJECT_DIR$/Pages/LoginPage.php">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="706">
               <caret line="82" column="69" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
+=======
+            <state relative-caret-position="243">
+              <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+              <folding />
+>>>>>>> fb3f9a001d834d22656f8c8ee3314db5fb79a006
 =======
             <state relative-caret-position="243">
               <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
@@ -271,16 +283,26 @@
       <workItem from="1524027611957" duration="1232000" />
       <workItem from="1524039850034" duration="386000" />
       <workItem from="1524049162895" duration="1625000" />
+<<<<<<< HEAD
+>>>>>>> fb3f9a001d834d22656f8c8ee3314db5fb79a006
+=======
 >>>>>>> fb3f9a001d834d22656f8c8ee3314db5fb79a006
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="96306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="97693000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+>>>>>>> fb3f9a001d834d22656f8c8ee3314db5fb79a006
 =======
     <option name="totallyTimeSpent" value="97693000" />
   </component>
@@ -538,6 +560,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pages/MainPage.php">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
@@ -547,6 +570,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DAO/LoginDAO.php">
       <provider selected="true" editor-type-id="text-editor">
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAO/LoginDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+>>>>>>> fb3f9a001d834d22656f8c8ee3314db5fb79a006
         <state relative-caret-position="509">
           <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
           <folding>
@@ -598,8 +632,14 @@
     <entry file="file://$PROJECT_DIR$/Controllers/loginController.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="706">
           <caret line="82" column="69" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
+=======
+        <state relative-caret-position="180">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+>>>>>>> fb3f9a001d834d22656f8c8ee3314db5fb79a006
 =======
         <state relative-caret-position="180">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
