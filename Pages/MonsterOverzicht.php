@@ -19,20 +19,7 @@
             <a href="MonsterOverzicht.php">Overzicht monsters</a>
             <a href="EncounterPage.php">encounter</a>
         </div>
-        <div id="login">
-            <?php
-            if ((!isset($_COOKIE["loginCheck"]) || $_COOKIE["isLoggedIn"]==false)){
-                ?>
-               <?php include "../Controllers/loginController.php" ?>
-                <?php
-            }
-            else{
-                ?>
-                <p> <?php echo "hallo: ".$_COOKIE["loginName"]; ?> </p>
-                <?php
-            }
-            ?>
-        </div>
+
     </header>
     <body>
     Filter op monster type <input name="filterMonsterType" type="text" id="filterOpMonsterType" placeholder="Filter op monster TYPE" onkeyup="filterOpMonsterType()"/>

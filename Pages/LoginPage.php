@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,15 +12,13 @@
         <a href="EncounterPage.php">encounter</a>
         <a href="LoginPage.php">Login</a>
     </div>
-
+    <div id="login">
+        <?php  include "../Controllers/loginController.php";?>
+    </div>
 
 </header>
 <body>
-<?php
-include "../Controllers/showMonstersMainPage.php";
-?>
 test
-<a href="MonsterOverzicht.php"> Overzicht monsters</a>
 </body>
 </html>
 <?php

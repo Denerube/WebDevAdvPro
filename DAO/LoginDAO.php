@@ -15,7 +15,7 @@ class LoginDAO
     }
 
     public static function login($email,$passwoord){
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM GEBRUIKERS WHERE ID=?",array(1));
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM GEBRUIKERS WHERE Email='?' AND  Passwoord='?'",array($email,$passwoord));
         if ($resultaat ->num_rows == 1) {
 
             $databaseRij = $resultaat->fetch_array();
