@@ -19,9 +19,9 @@
 include "../Controllers/showMonstersMainPage.php";
 ?>
 test
+
 <a href="MonsterOverzicht.php"> Overzicht monsters</a>
 </body>
 </html>
 <?php
-
 ?>

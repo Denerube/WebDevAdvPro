@@ -15,34 +15,28 @@
         <a href="EncounterPage.php">encounter</a>
     </div>
     <?php
-    if ((!isset($_COOKIE["loginCheck"]) && !isset($_COOKIE["isLoggedIn"]))  ){
+    session_start();
+    if (!isset($_SESSION["User"]) ){
         ?>
-        <div id="login">
-            <h6>Login</h6>
-            <form name="login" action="../Controllers/loginController.php" method="POST">
-                Email: <input name="loginName" required>
-                Password: <input name="loginPass" required>
-                <input type="submit">
-            </form>
-            <h6>Maak account aan</h6>
-            <a href="MakeNewUserPage.php">Maak een nieuw account aan</a>
-        </div>
+        <?php
+        echo "u bent niet  ingelogd log u aub in";
+        ?>
+        <a href="../Pages/MainPage.php">Terug naar de hoofdpagina</a>
+        <a href="../Pages/LoginPage.php">Login</a>
         <?php
     }
-    elseif($_COOKIE["isLoggedIn"] == true){
-
+    else{
         ?>
-        <p> <?php echo $_COOKIE["loginName"];; ?></p>
+        <?php
+        echo "u bent al ingelogd";?>
+
+         <a href="../Controllers/Logout.php">Log out</a>;
+
         <?php
     }
     ?>
-
-
-
-
 </header>
 <body>
-<?php include_once "../Controllers/loginController.php"?>
 <h1>Maak een nieuwe encounter</h1>
 <h2>Deze monsters zitte er al in jouw encounter</h2>
 <button onclick="printList()">TEST</button>
