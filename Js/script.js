@@ -1,11 +1,28 @@
 
-var encounterMonsterIDList=[];
-var encounterMonsterNaamList=[];
-if (0 != sessionStorage.getItem("tellerencounterMonsterList")) {
-    var tellerencounterMonsterList=sessionStorage.getItem("tellerencounterMonsterList");
-}else{
-    sessionStorage.setItem("tellerencounterMonsterList",0)
+var encounterMonsterIDList =[];
+var encounterMonsterNaamList =[];
+tellerencounterMonsterList=0;
+if (sessionStorage.getItem("encounterMonsterIDList") != null){
+    encounterMonsterIDList =JSON.parse(sessionStorage.getItem("encounterMonsterIDList"));
 }
+else{
+    sessionStorage.setItem("encounterMonsterIDList",JSON.stringify(encounterMonsterIDList));
+}
+if (sessionStorage.getItem("encounterMonsterNaamList") != null){
+    encounterMonsterNaamList =JSON.parse(sessionStorage.getItem("encounterMonsterNaamList"));
+}else {
+    sessionStorage.setItem("encounterMonsterIDList",JSON.stringify(encounterMonsterIDList));
+}
+if (sessionStorage.getItem("tellerencounterMonsterList") !=0){
+    var tellerencounterMonsterList=sessionStorage.getItem("tellerencounterMonsterList");
+
+}else{
+    sessionStorage.setItem("tellerencounterMonsterList",tellerencounterMonsterList);
+
+}
+
+
+
 
 
 var detailID=0;
@@ -45,19 +62,14 @@ function printList(){
 $(document).ready(function() {
 
     $('button.EncounterMonsterToevoegen').on("click",function () {
-        if ( 0 != sessionStorage.getItem("tellerencounterMonsterList" ) ) {
-            encounterMonsterIDList=JSON.parse(sessionStorage.getItem("encounterMonsterIDList"));
-            encounterMonsterNaamList=JSON.parse(sessionStorage.getItem("encounterMonsterNaamList"));
-        }
+
 
         encounterMonsterIDList[tellerencounterMonsterList]=($(this).siblings('#MonsterID').text());
         encounterMonsterNaamList[tellerencounterMonsterList]=($(this).siblings('#MonsterNaam').text());
         tellerencounterMonsterList++;
-
         sessionStorage.setItem("tellerencounterMonsterList",tellerencounterMonsterList);
         sessionStorage.setItem("encounterMonsterIDList",JSON.stringify(encounterMonsterIDList));
         sessionStorage.setItem("encounterMonsterNaamList",JSON.stringify(encounterMonsterNaamList));
-        console.log(encounterMonsterIDList);
         copy = $(this).siblings('#MonsterNaam').text();
         $('#listSelectetMonsters').append("<p>" +copy +"</p>");
 
