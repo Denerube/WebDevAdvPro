@@ -63,7 +63,8 @@ $(document).ready(function() {
 
     $('button.EncounterMonsterToevoegen').on("click",function () {
 
-
+        console.log(tellerencounterMonsterList);
+        console.log(encounterMonsterIDList);
         encounterMonsterIDList[tellerencounterMonsterList]=($(this).siblings('#MonsterID').text());
         encounterMonsterNaamList[tellerencounterMonsterList]=($(this).siblings('#MonsterNaam').text());
         tellerencounterMonsterList++;
