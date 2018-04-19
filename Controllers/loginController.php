@@ -24,8 +24,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     else{
 
 
-        echo "oeps";
-       include_once "../Pages/LoginPage.php";
+
+        header("location:../Pages/LoginPage.php");
 
 
 

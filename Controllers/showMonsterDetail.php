@@ -3,6 +3,8 @@ include_once "../DAO/MonsterDAO.php";
 ?>
 <?php
 $id=$_GET['id'];
+echo $id;
+
 $lijstMonsters[0] = MonsterDAO::getMonsterById($id);
 ?>
 <ul id="MonsterLijstOverzicht" >
@@ -49,5 +51,6 @@ $lijstMonsters[0] = MonsterDAO::getMonsterById($id);
 
         <?php
     }
+
     ?>
 </ul>

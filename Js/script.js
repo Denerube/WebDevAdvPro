@@ -27,13 +27,8 @@ function filterOpMonsterType() {
 
 
 $(document).ready(function() {
-    $('button.gaNaarDetails').on("click",function () {
 
-        detailID=($(this).siblings('#MonsterID').text());
-        $.post('../Controllers/showMonsterDetail.php',{id:detailID});
-        location.href="../Pages/Monsterdetailpagina.php?id="+detailID;
-    });
-   $('#AddmonstereToEncounter').submit(function (e) {
+    $('#AddmonstereToEncounter').submit(function (e) {
             e.preventDefault();
             var form=$(this);
             $.ajax({
@@ -45,8 +40,18 @@ $(document).ready(function() {
                     console.log("item toegevoegd");
                     copy = $(this).siblings('#MonsterNaam').text();
                     $('#listSelectetMonsters').append("<p>" +copy +"</p>");
+                },
+                error:function () {
+                    console.log("error");
                 }
             });
    });
+    $('button.gaNaarDetails').on("click",function () {
+
+        detailID=($(this).siblings('#MonsterID').text());
+        console.log(detailID);
+        $.get('../Controllers/showMonsterDetail.php',{id:detailID});
+        location.href="../Pages/Monsterdetailpagina.php?id="+detailID;
+    })
 
 });
