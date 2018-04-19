@@ -42,8 +42,15 @@ $lijstMonsters = MonsterDAO::getAll();
                 echo '<img src="data:image/jpeg;base64,'.base64_encode( $lijstMonsters[$i]->getFoto() ).'"/>';
                 ?>
             </div>
-            <button id="EncounterMonsterToevoegen" class="EncounterMonsterToevoegen">Monster toevoegen</button>
-            <button id="gaNaarDetails" class="gaNaarDetails">Details monster</button>
+            <div id="buttons">
+                <form action="../Controllers/EncounterController.php" method="POST" id="AddmonstereToEncounter" class="AddmonstereToEncounter">
+                    <input type="hidden" name="monsterID" value="<?php echo $lijstMonsters[$i]->getID();?>"/>
+                    <input type="submit" value="addmonster"/>
+                </form>
+                <button id="gaNaarDetails" class="gaNaarDetails">Details monster</button>
+            </div>
+
+
         </li>
 
         <?php

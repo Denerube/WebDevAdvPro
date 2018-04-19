@@ -1,29 +1,4 @@
 
-var encounterMonsterIDList =[];
-var encounterMonsterNaamList =[];
-tellerencounterMonsterList=0;
-if (sessionStorage.getItem("encounterMonsterIDList") != null){
-    encounterMonsterIDList =JSON.parse(sessionStorage.getItem("encounterMonsterIDList"));
-}
-else{
-    sessionStorage.setItem("encounterMonsterIDList",JSON.stringify(encounterMonsterIDList));
-}
-if (sessionStorage.getItem("encounterMonsterNaamList") != null){
-    encounterMonsterNaamList =JSON.parse(sessionStorage.getItem("encounterMonsterNaamList"));
-}else {
-    sessionStorage.setItem("encounterMonsterIDList",JSON.stringify(encounterMonsterIDList));
-}
-if (sessionStorage.getItem("tellerencounterMonsterList") !=0){
-    var tellerencounterMonsterList=sessionStorage.getItem("tellerencounterMonsterList");
-
-}else{
-    sessionStorage.setItem("tellerencounterMonsterList",tellerencounterMonsterList);
-
-}
-
-
-
-
 
 var detailID=0;
 
@@ -47,42 +22,31 @@ function filterOpMonsterType() {
             }
         }
 }
-function printList(){
-    console.log("doe iets");
-    var afdruk = JSON.parse(sessionStorage.getItem("encounterMonsterNaamList"));
-    var tellerencounterMonsterList = sessionStorage.getItem("tellerencounterMonsterList");
-    for (var i=0;i<tellerencounterMonsterList;i++){
-        $('#encounterAfdruk').append("<p>"+ afdruk[i]+"</p>");
 
-    }
-}
 
 
 
 $(document).ready(function() {
-
-    $('button.EncounterMonsterToevoegen').on("click",function () {
-
-        console.log(tellerencounterMonsterList);
-        console.log(encounterMonsterIDList);
-        encounterMonsterIDList[tellerencounterMonsterList]=($(this).siblings('#MonsterID').text());
-        encounterMonsterNaamList[tellerencounterMonsterList]=($(this).siblings('#MonsterNaam').text());
-        tellerencounterMonsterList++;
-        sessionStorage.setItem("tellerencounterMonsterList",tellerencounterMonsterList);
-        sessionStorage.setItem("encounterMonsterIDList",JSON.stringify(encounterMonsterIDList));
-        sessionStorage.setItem("encounterMonsterNaamList",JSON.stringify(encounterMonsterNaamList));
-        copy = $(this).siblings('#MonsterNaam').text();
-        $('#listSelectetMonsters').append("<p>" +copy +"</p>");
-
-
-   });
-
     $('button.gaNaarDetails').on("click",function () {
 
         detailID=($(this).siblings('#MonsterID').text());
         $.post('../Controllers/showMonsterDetail.php',{id:detailID});
         location.href="../Pages/Monsterdetailpagina.php?id="+detailID;
     });
-
+   $('#AddmonstereToEncounter').submit(function (e) {
+            e.preventDefault();
+            var form=$(this);
+            $.ajax({
+                url: form.attr("action"),
+                type: "POST",
+                datatype:"json",
+                data:form.serialize(),
+                succes:function () {
+                    console.log("item toegevoegd");
+                    copy = $(this).siblings('#MonsterNaam').text();
+                    $('#listSelectetMonsters').append("<p>" +copy +"</p>");
+                }
+            });
+   });
 
 });
