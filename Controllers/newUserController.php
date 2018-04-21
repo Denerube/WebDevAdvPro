@@ -7,32 +7,37 @@ $valid = true;
 
 //array waar alle errors in zullen komen
 $errors = [
-    "Email" => "",
-    "Naam" => "",
-    "Pass" => "",
-    "passConfirm" => "",
+    "newloginMail" => "",
+    "newUserName" => "",
+    "newloginPass" => "",
+    "newloginPassConfirm" => "",
+    "nietOvereen"=>""
 
 ];
 
 //array met alle default values van de input velden
 $values = [
-    "Email" => "",
-    "Naam" => "",
-    "Pass" => "",
-    "passConfirm" => "",
+    "newloginMail" => "",
+    "newUserName" => "",
+    "newloginPass" => "",
+    "newloginPassConfirm" => ""
+
 ];
 
 include_once 'validatie.php';
 
 if($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    include_once "../Pages/MakeNewUserPage.php";
+    //include_once "../Pages/MakeNewUserPage.php";
+
 }
 else{
     checkRequired($required);
-    checkEmail("newloginName");
+    checkEmail("newloginMail");
     checkNaam("newUserName");
     checkPass("newloginPass");
     checkPassConfirm("newloginPassConfirm");
+    //checkPassOvereenKomst();
+
     foreach($errors as $error) {
         if(!empty($error)) {
             $valid = false;
@@ -40,13 +45,13 @@ else{
         }
     }
 
-    // als formulier niet valid is wordt formulier terug getoond met foutboodschappen
     if(!$valid) {
+
         include '../Pages/MakeNewUserPage.php';
     } else {
-        // anders wordt het resultaat getoond
         echo "succes";
-        include "../Pages/MainPage.php";
+        //header("location:../Pages/Maingpage.php");
+
     }
 
 }

@@ -27,25 +27,29 @@ function filterOpMonsterType() {
 
 
 $(document).ready(function() {
-
-    $('#AddmonstereToEncounter').submit(function (e) {
+     $('#AddmonstereToEncounter').submit(function (e) {
             e.preventDefault();
-            var form=$(this);
+            var form = $(this);
             $.ajax({
-                url: form.attr("action"),
+                url: "../Controllers/EncounterController",
                 type: "POST",
-                datatype:"json",
-                data:form.serialize(),
-                succes:function () {
-                    console.log("item toegevoegd");
-                    copy = $(this).siblings('#MonsterNaam').text();
-                    $('#listSelectetMonsters').append("<p>" +copy +"</p>");
-                },
-                error:function () {
-                    console.log("error");
+                data: ({ passMonsterID :1 }),
+                success: function (data) {
+                    console.log("succes");
+
+                    if(data.error) {
+                       console.log(data.error);
+                    }
+
+                    if(data.succes) {
+                        console.log(data.succes);
+                    }
+
                 }
             });
-   });
+        });
+
+
     $('button.gaNaarDetails').on("click",function () {
 
         detailID=($(this).siblings('#MonsterID').text());

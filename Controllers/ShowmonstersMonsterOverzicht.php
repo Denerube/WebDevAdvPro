@@ -44,9 +44,8 @@ $lijstMonsters = MonsterDAO::getAll();
             </div>
             <button id="gaNaarDetails" class="gaNaarDetails">Details monster</button>
             <div id="buttons">
-                <form action="../Controllers/EncounterController.php" method="POST" id="AddmonstereToEncounter" class="AddmonstereToEncounter">
+                <form action="../Controllers/EncounterController.php" method="post" id="AddmonstereToEncounter" class="AddmonstereToEncounter">
                     <input type="hidden" name="passMonsterID" value="<?php echo $lijstMonsters[$i]->getID();?>"/>
-                    <input type="hidden" name="passMonsterNaam" value="<?php echo $lijstMonsters[$i]->getNaam();?>"/>
                     <input type="submit" value="addmonster"/>
                 </form>
 

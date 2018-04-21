@@ -15,6 +15,19 @@
 </header>
 <body>
 <?php
+include_once "../MODELS/Gebruiker.php";
+session_start();
+if (isset($_SESSION['User'])) {
+    $checkRechten=unserialize($_SESSION['User']);
+
+    if ($checkRechten->getIsAdmin() == true) {
+        ?>
+        <a href="MakeNewMonsterPage.php">Maak een nieuw monster</a>
+    <?php
+        } else {
+           //doe helemaal niets
+    }
+}
 include "../Controllers/ShowMonsterDetail.php";
 ?>
 
