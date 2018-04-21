@@ -36,7 +36,7 @@ else{
     checkNaam("newUserName");
     checkPass("newloginPass");
     checkPassConfirm("newloginPassConfirm");
-    //checkPassOvereenKomst();
+    checkPassOvereenKomst();
 
     foreach($errors as $error) {
         if(!empty($error)) {
@@ -48,9 +48,13 @@ else{
     if(!$valid) {
 
         include '../Pages/MakeNewUserPage.php';
+        var_dump($valid);
+
     } else {
         echo "succes";
-        //header("location:../Pages/Maingpage.php");
+        var_dump($valid);
+
+        //$nGebruiker= new Gebruiker("null",)
 
     }
 

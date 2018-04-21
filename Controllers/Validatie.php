@@ -1,5 +1,5 @@
 <?php
-
+//uit werkcollege
 function checkRequired($fields) {
     foreach($fields as $name) {
         if(required($name)) {
@@ -89,6 +89,7 @@ function checkMonsterSchildwaarde($check){
 
     }
 }
+///////////////////////////////////////////////////////////////////////////////////////////////
 
 function checkEmail($check){
     global $errors;
@@ -134,14 +135,13 @@ function checkPassConfirm($check){
 function checkPassOvereenKomst(){
     global $errors;
     global $values;
-    if(!empty($values["newloginPass"])){
-        if ($values["newloginPass"] == $values["newloginPassConfirm"]){
+    if ($values["newloginPass"] == $values["newloginPassConfirm"]){
             // komen overeen doe niets
 
-        }else{
+    }else{
             $errors["nietOvereen"] ="paswoorden komen niet overeen";
-        }
     }
+
 
 
 }

@@ -18,6 +18,7 @@
             <a href="MainPage.php">Main page</a>
             <a href="MonsterOverzicht.php">Overzicht monsters</a>
             <a href="EncounterPage.php">encounter</a>
+            <a href="../Controllers/MonsterToevoegenEncounter.php">test</a>
         </div>
 
     </header>

@@ -46,7 +46,7 @@
 </header>
 <body>
 <a href="../Pages/MonsterOverzicht.php"> Overzicht monsters</a>
-<form action="../Controllers/MakeNewMonsterController.php" method="post">
+<form action="../Controllers/MakeNewMonsterController.php" method="post" enctype="multipart/form-data">
     Naam van het monster:<input type="text" name="newMonsterName" value="<?php echo $valuesNewMonster["newMonsterName"];?>">
     <div><?php echo $errorsNewMonster["newMonsterName"];?></div>
     Type van het monster:<input type="text"name="newMonsterType" value="<?php echo $valuesNewMonster["newMonsterType"];?>">
@@ -55,8 +55,8 @@
     <div><?php echo $errorsNewMonster["newMonsterLevenspunten"];?></div>
     Schildwaarde van het monster <input type="text"name="newMonsterSchildwaarde" value="<?php echo $valuesNewMonster["newMonsterSchildwaarde"];?>">
     <div><?php echo $errorsNewMonster["newMonsterSchildwaarde"];?></div>
-    //Foto van het monster <input type="file"name="newMonsterFoto" >
-    <div><?php //echo $errorsNewMonster["newMonsterFoto"];?></div>
+    Foto van het monster <input type="file"name="newMonsterFoto" >
+
     <input type="submit">
 </form>
 </body>

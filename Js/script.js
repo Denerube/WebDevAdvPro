@@ -25,29 +25,28 @@ function filterOpMonsterType() {
 
 
 
-
 $(document).ready(function() {
-     $('#AddmonstereToEncounter').submit(function (e) {
-            e.preventDefault();
-            var form = $(this);
-            $.ajax({
-                url: "../Controllers/EncounterController",
-                type: "POST",
-                data: ({ passMonsterID :1 }),
-                success: function (data) {
-                    console.log("succes");
-
-                    if(data.error) {
-                       console.log(data.error);
-                    }
-
-                    if(data.succes) {
-                        console.log(data.succes);
-                    }
-
-                }
-            });
+    //uit werkcollege
+    $('form.AddmonstereToEncounter').on('submit', function(e) {
+        //console.log("doe iets");
+        e.preventDefault();
+        var formData = $(this);
+        $.ajax ({
+            url: "../Controllers/MonsterToevoegenEncounter.php",
+            type: "post",
+            data: formData.serialize(),
+            error: function(xhr, textStatus, error){
+                console.log("er is iets fout gegaan");
+                console.log(xhr.statusText);
+                console.log(textStatus);
+                console.log(error);
+            },
+            success: function(){
+                console.log(formData, ' added to encounter');
+            }
         });
+
+    });
 
 
     $('button.gaNaarDetails').on("click",function () {

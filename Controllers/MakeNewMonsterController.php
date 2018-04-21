@@ -38,11 +38,10 @@ else{
     checkMonsterSchildwaarde("newMonsterSchildwaarde");
 
 
-    foreach($errorsNewMonster as $error) {
-        if(!empty($errorsNewMonster)) {
+    foreach($errorsNewMonster as $monsterError) {
+        if(!empty($monsterError)) {
             $valid = false;
             break;
-        }else{
         }
     }
 
@@ -51,17 +50,27 @@ else{
         var_dump($valid);
     } else {
         echo "succes";
-        var_dump($valid);
-
-
-
         $MonsterNaam=$_POST["newMonsterName"];
         $MonsterType=$_POST["newMonsterType"];
         $MonsterLevenspunten=$_POST["newMonsterLevenspunten"];
         $MonsterSchildwaarde=$_POST["newMonsterSchildwaarde"];
-        //$MonsterFoto=$_POST["newMonsterFoto"];
-        //$MonsterFoto=file_get_contents($_FILES['newMonsterFoto']['tmp_name']);
-        //$uploadMonster=new Monster("1",$MonsterNaam,$MonsterType,$MonsterLevenspunten,$MonsterSchildwaarde,$MonsterFoto);
+
+        if(count($_FILES) > 0) {
+            if(is_uploaded_file($_FILES['newMonsterFoto']['tmp_name'])) {
+
+                $MonsterFoto=$_FILES["newMonsterFoto"]["tmp_name"];
+                $img=file_get_contents($MonsterFoto);
+
+                $uploadMonster=new Monster(null,$MonsterNaam,$MonsterType,$MonsterLevenspunten,$MonsterSchildwaarde,$img);
+
+                MonsterDAO::insertNewMonster($uploadMonster);
+            }
+        }else{
+            echo "no pic";
+        }
+        echo "<a href='../Pages/MainPage.php'></a>";
+
+
 
     }
 

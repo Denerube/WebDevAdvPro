@@ -58,7 +58,7 @@ class MonsterDAO
     }
     public static function  insertNewMonster($monster)
     {
-        return self::getVerbinding()->voerSqlQueryUit("INSERT INTO MONSTERS( Naam, Type, Levenspunten, Schildwaarde) VALUES ('?','?','?','?')", array( $monster->getNaam(), $monster->getType(), $monster->getLevenspunten(), $monster->getSchildwaarde()));
+        return self::getVerbinding()->voerSqlQueryUit("INSERT INTO MONSTERS( Naam, Type, Levenspunten, Schildwaarde) VALUES ('?','?','?','?','?')", array( $monster->getNaam(), $monster->getType(), $monster->getLevenspunten(), $monster->getSchildwaarde(),$monster->getFoto()));
     }
     public static function deleteMonsterById($id) {
         return self::getVerbinding()->voerSqlQueryUit("DELETE FROM MONSTERS where ID=?", array($id));

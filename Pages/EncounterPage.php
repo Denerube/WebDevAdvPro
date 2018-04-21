@@ -29,15 +29,15 @@
         ?>
         <?php
         echo "u bent al ingelogd";?>
-
-         <a href="../Controllers/Logout.php">Log out</a>;
         </header>
 <body>
 <h1>Maak een nieuwe encounter</h1>
 <h2>Deze monsters zitte er al in jouw encounter</h2>
         <?php
         include "../Controllers/EncounterController.php";
-    }
+
+        }
+
     ?>
 
 
